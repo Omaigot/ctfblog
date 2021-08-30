@@ -45,23 +45,17 @@ social:
 
 
 #-------------------------------
-# Comment Section (Disqus)
-disqus-identifier:  # Add your shortname for Disqus Comment. For example anvodstudio-demo
+# Comment (Disqus)
+disqus-identifier:  
 
-
-#-------------------------------
 # Google Analytics
-google-analytics: # Add your identifier. For example UA-99631805-1.
+google-analytics: 
 
 
-#-------------------------------
-# Newsletter
-mailchimp: disable # To enable the mailchimp form, use the value 'enable'. To disable the form, leave the field blank.
-mailchimp-identifier: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+mailchimp: disable 
+mailchimp-identifier: 
 
-
-#-------------------------------
-# Build settings
+# settings
 markdown: kramdown
 permalink: pretty
 plugins:
@@ -78,9 +72,28 @@ paginate_path: "/page/:num"
 # Pages Path
 defaults:
   - scope:
-      path: '_pages'
+      path: ''
+      type: posts
     values:
-      permalink: /:basename:output_ext
+      layout: post
+      permalink: /:title/
+
+# defaults:
+ # -
+ #   scope:
+ #     path: ''          
+ #     type: posts
+ #   values:
+ #     layout: post
+ #     comments: true    
+ #     toc: true         
+ #     autoads: true     
+ #     permalink: /:title/
+ # -
+ #   scope:
+ #     path: _drafts
+ #   values:
+ #     comments: false 
 
 include:
   - _pages
