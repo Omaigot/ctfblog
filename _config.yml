@@ -64,9 +64,22 @@ plugins:
   - jekyll/tagging
 
 kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
   parse_block_html: true
 
-paginate: 8
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+paginate: 7
 paginate_path: "/page/:num"
 
 # Pages Path
@@ -76,6 +89,8 @@ defaults:
       type: posts
     values:
       layout: post
+      autoads: true
+      toc: true
       permalink: /:title/
 
 # defaults:
@@ -106,3 +121,12 @@ tag_permalink_style:  pretty
 sass:
   sass_dir: _sass
   style: compressed
+  
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
