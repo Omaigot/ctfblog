@@ -1,7 +1,8 @@
 ---
 layout: post
 title: HackTheBox - Shocker
-date: 2020-12-23 13:32:00 +0100
+date: 2021-08-31 13:32:00 +0100
+description: Shocker” is a surprisingly simple Linux box that requires proper enumeration to discover its vulnerability. Further privilege escalation is necessary to achieve root-level access
 tags: [HackTheBox]
 image: /assets/img/htb/machines/linux/easy/shocker/shocker.png
 ---
