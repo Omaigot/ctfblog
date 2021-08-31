@@ -116,7 +116,7 @@ include:
 # Tags
 tag_page_dir:         tag
 tag_page_layout:      tag_page
-tag_permalink_style:  pretty
+tag_permalink_style:  /tag/:name/
 
 sass:
   sass_dir: _sass
