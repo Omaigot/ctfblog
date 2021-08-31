@@ -9,7 +9,11 @@ image: /assets/img/htb/machines/linux/easy/shocker/shocker.png
 
 ## Foothold
 
+Before we start I always reset the box, it is often that services have crashed or behaves in unintended ways after others have exploited them. And I do not want any spoilers that may have been left by others on the box
+
 ### `nmap` scan
+
+First, as usual. i did the initial enumeration of my box using Nmap.
 
 {% highlight bash %}
 $  nmap -min-rate 5000 --max-retries 1 -sV -sC -p- -oN Shocker-full-port-scan.txt 10.10.10.56
