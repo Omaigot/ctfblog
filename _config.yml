@@ -41,12 +41,12 @@ social:
 - {icon: "ion-logo-linkedin", link: "https://www.linkedin.com/in/"}
 - {icon: "ion-logo-instagram", link: "https://www.instagram.com/enoleriand"}
 - {icon: "ion-logo-facebook", link: "https://www.facebook.com/SarahExploit"}
-- {icon: "ion-logo-bug", link: "https://www.bugcrowd.com/"}}
+- {icon: "ion-logo-bug", link: "https://www.bugcrowd.com/"}
 
 
 #-------------------------------
 # Comment (Disqus)
-disqus-identifier: anvodstudio-demo
+disqus-identifier: darksec
 
 # Google Analytics
 google-analytics: 
