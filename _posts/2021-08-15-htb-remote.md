@@ -10,7 +10,7 @@ image: /assets/img/htb/machines/windows/easy/remote/Remote.png
 
 ### `nmap` scan
 
-{% highlight bash %}
+```
 # Nmap 7.91 scan initiated Sun Aug 15 17:43:17 2021 as: nmap -min-rate 5000 --max-retries 1 -sV -sC -p- -oN Remote-full-port-scan.txt 10.10.10.180
 Warning: 10.10.10.180 giving up on port because retransmission cap hit (1).
 Nmap scan report for 10.10.10.180
@@ -64,7 +64,7 @@ PORT      STATE SERVICE       VERSION
 49679/tcp open  msrpc         Microsoft Windows RPC
 49680/tcp open  msrpc         Microsoft Windows RPC
 Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
-{% endhighlight %}
+```
 
 ### Port 21 (FTP)
 
